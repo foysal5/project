@@ -5,109 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/table/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <table border="4" width="800">
 
-        <thead>
-            <tr>
-                <th colspan="5">Cloud Institute</th>
-            </tr>
 
-            <tr>
-                <th colspan="5">Batch 2205</th>
-            </tr>
+    <div class="buttons" id="buttons">
+        <button id="red"></button>
+        <button id="blue"></button>
+        <button id="purple"></button>
+        <button id="green"></button>
+        <button id="pink"></button>
+        <button id="action">X</button>
+    </div>
 
-            <tr>
-                <th>Group-A</th>
-                <th>Group-B</th>
-                <th>Group-C</th>
-                <th>Group-D</th>
-                <th>Group-E</th>
-                
-            </tr>
-        </thead>    
 
-            <tbody>
-                <tr>
-                    <td>Nadira*</td>
-                    <td>Jibon*</td>
-                    <td>Farjana*</td>
-                    <td>Utpal*</td>
-                    <td>Fahad*</td>
-                </tr>
+    <script src="js/jquery-3.6.1.min.js"></script>
 
-                <tr>
-                    <td>Arthy</td>
-                    <td>Foyzunnesa</td>
-                    <td>Tinni</td>
-                    <td>Nasif</td>
-                    <td>Provanjon</td>
-                </tr>
+    <script>
+        $('#action').click(function(){
+            $('#buttons').toggleClass('action');
+        })
 
-                <tr>
-                    <td>Tazmira</td>
-                    <td>Nowrin</td>
-                    <td>Bristy</td>
-                    <td>Zahirul</td>
-                    <td>Mehedi</td>
-                </tr>
+        function remove_class(){
+            $('body').removeClass('red blue purple green pink');
+        }
 
-            </tbody>
+        $('#red').click(function(){
+            remove_class();
+            $('body').addClass('red');
+        })
 
-         <tfoot>
-            <tr>
-                <th>Total Project</th>
-                <th>Total Project</th>
-                <th>Total Project</th>
-                <th>Total Project</th>
-                <th>Total Project</th>
-            </tr>
+        $('#blue').click(function(){
+            remove_class();
+            $('body').addClass('blue'); 
+        })
+       
+        $('#purple').click(function(){
+            remove_class();
+            $('body').addClass('purple'); 
+        }) 
+            
 
-            <tr>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-            </tr>
+        $('#green').click(function(){
+            remove_class();
+            $('body').addClass('green'); 
+        })
 
-            <tr>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-            </tr>
+        $('#pink').click(function(){
+            remove_class();
+            $('body').addClass('pink'); 
+        })
 
-            <tr>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-            </tr>
 
-            <tr>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-            </tr>
 
-            <tr>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-                <td>.</td>
-            </tr>
-         </tfoot>   
 
-        
+    </script>
 
-    </table>
+
+
+
 </body>
 </html>

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: black;
+    position: relative;
+}
+.buttons{
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 30px;
+    margin-left: -300px;
+    position: absolute;
+    top: 40px;
+    transition: all .3s linear;
+    background: white;
+    padding: 10px;
+}
+.buttons.action{
+    margin-left: 0px;
+}
+
+
+button{
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+#red{
+    background: red;
+}
+
+.red{
+    background: red;
+}
+
+#blue{
+    background: blue;
+}
+
+.blue{
+    background: blue;
+}
+
+#purple{
+    background: purple;
+}
+
+.purple{
+    background: purple;
+}
+
+#green{
+    background: green;
+}
+
+.green{
+    background: green;
+}
+
+#pink{
+    background: pink;
+}
+
+.pink{
+    background: pink;
+}
