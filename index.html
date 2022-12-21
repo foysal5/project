@@ -1,69 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Jadoo - Travel Agency</title>
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+
+    <!-- slick-slider -->
+    <link rel="stylesheet" href="assets/vendor/slick/slick.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
 
 
-    <div class="buttons" id="buttons">
-        <button id="red"></button>
-        <button id="blue"></button>
-        <button id="purple"></button>
-        <button id="green"></button>
-        <button id="pink"></button>
-        <button id="action">X</button>
+    <!-- menu section start -->
+    <div class="menu">
+        <div class="container menu_container">
+
+            <!-- logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/image/logo.png.png" alt="">
+                </a>
+            </div>
+
+
+            <!-- navbar start -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Desitnations</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Bookings</a></li>
+                </ul>
+            </nav>
+            <!-- navbar end -->
+
+            <!-- buttons section start -->
+            <div class="buttons">
+                <a href="#" class="menu-btn">Login</a>
+                <a href="#" class="menu-btn">Signup</a>
+                <select name="" id="" class="menu-select">
+                    <option value="EN">EN</option>
+                    <option value="BN">BN</option>
+                </select>
+                <a href="#" id="menu_btn"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <!-- buttons section end -->
+
+        </div>
+    </div>
+    <!-- menu section end -->
+
+    <!-- banner section start -->
+    <div class="banner">
+        <img class="banner-back" src="assets/image/banner.png" alt="">
+        <div class="container banner_container">
+            <div class="left_box">
+                <h4>Best Destinations around the world</h4>
+                <h1>
+                    <img src="assets/image/shape h1.png" alt="">
+                    Travel,enjoy and live a new and full life
+                </h1>
+                <p>Built Wicket longer admire do barton vanity itself do in it. <br>Preferred to sportsmen it engrossed
+                    listening. Park gate <br> sell they west hard for the.</p>
+
+                <div class="buttons">
+                    <a href="#" class="banner-btn">Find out more</a>
+                    <a href="#" class="play-btn"><i class="fa-solid fa-play"></i>Play Demo</a>
+                </div>
+            </div>
+
+            <div class="right_box">
+                <img class="plane-1" src="assets/image/plane 1.png" alt="">
+                <img src="assets/image/girl.png" alt="">
+                <img class="plane-2" src="assets/image/plane 2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- category section start -->
+    <section class="category">
+        <img src="assets/image/star.png" alt="" class="star">
+        <div class="container category_container">
+            <div class="heading">
+                <p>CATEGORY</p>
+                <h2>We Offer Best Services</h2>
+            </div>
+            <div class="categories">
+                <div class="categories single-category">
+                    <div class="image">
+                        <img src="assets/image/weather.png" alt="">
+                    </div>
+                    <h3>Calculated Weather</h3>
+                    <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+                </div>
+
+
+                <div class="categories single-category">
+                    <div class="image">
+                        <img src="assets/image/flight.png" alt="">
+                    </div>
+                    <h3>Best Flights</h3>
+                    <p>Engrossed listening. Park gate sell they west hard for the.</p>
+
+                    <div class="shape"></div>
+                </div>
+
+                <div class="categories single-category">
+                    <div class="image">
+                        <img src="assets/image/event.png" alt="">
+                    </div>
+                    <h3>Local Events</h3>
+                    <p>Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                </div>
+
+                <div class="categories single-category">
+                    <div class="image">
+                        <img src="assets/image/customization.png" alt="">
+                    </div>
+                    <h3>Customization</h3>
+                    <p>We deliver outsourced
+                        aviation services for
+                        military customers</p>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </section>
+    <!-- category section end -->
+
+    <!-- destination section start -->
+    <section class="destination">
+        <div class="container destination_container">
+            <div class="heading">
+                <p>Top Selling</p>
+                <h2>Top Destinations</h2>
+            </div>
+
+            <div class="destinations">
+                <div class="single-destination">
+                    <div class="image">
+                        <img src="assets/image/rome.png" alt="">
+                        <div class="text-area">
+                            <div class="title">
+                                <p>Rome, Italty</p>
+                                <p>$5,42k</p>
+                            </div>
+                            <p><i class="fa-solid fa-location-arrow"></i> 10 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-destination">
+                    <div class="image">
+                        <img src="assets/image/london.png" alt="">
+                        <div class="text-area">
+                            <div class="title">
+                                <p>London, UK</p>
+                                <p>$4.2k</p>
+                            </div>
+                            <p><i class="fa-solid fa-location-arrow"></i> 12 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-destination">
+                    <div class="image">
+                        <img src="assets/image/europe.png" alt="">
+                        <div class="text-area">
+                            <div class="title">
+                                <p>Full Europe</p>
+                                <p>$15k</p>
+                            </div>
+                            <p><i class="fa-solid fa-location-arrow"></i> 28 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/image/spiral.png" alt="" class="spiral">
+        </div>
+    </section>
+    <!-- destination section end -->
+
+    <!-- trip section start -->
+    <section class="trip">
+        <div class="container trip_container">
+            <div class="left-box">
+                <div class="heading">
+                    <p>Easy and Fast</p>
+                    <h2>Book your next trip
+                        in 3 easy steps</h2>
+                </div>
+
+                <div class="values">
+                    <div class="value">
+                        <div class="icon">
+                            <img src="assets/image/destination.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Choose Destination</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+
+                    <div class="value">
+                        <div class="icon">
+                            <img src="assets/image/payment.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Make Payment</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+
+                    <div class="value">
+                        <div class="icon">
+                            <img src="assets/image/airport.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Reach Airport on Selected Date</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Urna, tortor tempus. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-box">
+                <div class="card">
+                    <div class="circle"></div>
+                    <div class="image">
+                        <img src="assets/image/girl-2.png" alt="">
+                    </div>
+
+                    <div class="text-area">
+                        <p class="title">Trip To Greece</p>
+                        <p>14-29 June | by Robbin joseph</p>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa-solid fa-leaf"></i>
+                        <i class="fa-solid fa-map"></i>
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+
+                    <div class="card-footer">
+                        <p><i class="fa-regular fa-building"></i> 24 people going</p>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    </div>
+
+                    <div class="inner-card">
+                        <div class="image">
+                            <img src="assets/image/mosque.png" alt="">
+                        </div>
+                        <div class="text-area">
+                            <p>Ongoing</p>
+                            <p class="title">Trip to rome</p>
+                            <p class="status"><span>40%</span> completed</p>
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trip section end -->
+
+    <!-- testimonial section start -->
+    <section class="testimonal">
+        <div class="container testimonial_container">
+            <div class="left-box">
+                <div class="heading">
+                    <p>Testimonials</p>
+                    <h2>What people say
+                        about Us.</h2>
+                </div>
+                <div class="slick-dots"></div>
+            </div>
+            <div class="right-box">
+                <div class="testimonials">
+                    <div class="item">
+                        <div class="item-area">
+                            <img src="assets/image/mike taylor.png" alt="" class="man">
+                            <div class="text-area">
+                                <p class="quote">“On the Windows talking painted pasture yet its express parties use.
+                                    Sure last upon he same as knew next. Of believed or diverted no.”</p>
+                                <h5>Mike taylor</h5>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-area">
+                            <img src="assets/image/mike taylor.png" alt="" class="man">
+                            <div class="text-area">
+                                <p class="quote">“On the Windows talking painted pasture yet its express parties use.
+                                    Sure last upon he same as knew next. Of believed or diverted no.”</p>
+                                <h5>Mike taylor</h5>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-area">
+                            <img src="assets/image/mike taylor.png" alt="" class="man">
+                            <div class="text-area">
+                                <p class="quote">“On the Windows talking painted pasture yet its express parties use.
+                                    Sure last upon he same as knew next. Of believed or diverted no.”</p>
+                                <h5>Mike taylor</h5>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-arrows"></div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section end -->
+
+    <!-- partners section start -->
+    <section class="partner">
+        <div class="container partner_container">
+            <div class="single-partner">
+                <img src="assets/image/axon.png" alt="">
+            </div>
+
+            <div class="single-partner">
+                <img src="assets/image/jetstar.png" alt="">
+            </div>
+
+            <div class="single-partner">
+                <img src="assets/image/expedia.png" alt="">
+            </div>
+
+            <div class="single-partner">
+                <img src="assets/image/quantas.png" alt="">
+            </div>
+
+            <div class="single-partner">
+                <img src="assets/image/alitalia.png" alt="">
+            </div>
+
+
+        </div>
+    </section>
+    <!-- partners section end -->
+
+    <!-- subscribe section start -->
+    <section class="subscribe">
+        <div class="container subscribe_container">
+            <div class="image">
+                <img src="assets/image/star-2.png" alt="">
+            </div>
+            <div class="subscribe-area">
+
+                <i class="fa-solid fa-location-arrow icon"></i>
+
+                <img src="assets/image/decore 2.png" alt="" class="decore-2">
+                <img src="assets/image/decore 3.png" alt="" class="decore-3">
+                <h2>Subscribe to get information, latest news and other
+                    interesting offers about Cobham</h2>
+
+
+                <form action="">
+                    <div class="input-group">
+                        <div class="input-area">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text" name="email" placeholder="Your Email">
+                        </div>
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe section end -->
+
+    <!-- footer section start -->
+    <div class="footer">
+        <div class="container footer_container">
+            <div class="column">
+                <img class="logo" src="assets/image/Jadoo.png" alt="">
+                <p>Book your trip in minute, get full
+                    Control for much longer.</p>
+            </div>
+
+            <div class="column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Help/FAQ</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Affilates</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="#">Airlinefees</a></li>
+                    <li><a href="#">Airline</a></li>
+                    <li><a href="#">Low fare</a></li>
+                </ul>
+            </div>
+
+            <div class="column-2">
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <h3>Discover our app</h3>
+
+                <div class="play-store">
+                    <a href="#">
+                        <img src="assets/image/Google Play.png" alt="">
+                    </a>
+                </div>
+
+                <div class="apple-store">
+                    <a href="#">
+                        <img src="assets/image/Apple Store.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+
+    <div class="bottom-footer">
+        <div class="container bottom-footer_container">
+            <p>All rights reserved@jadoo.co</p>
+        </div>
     </div>
 
 
-    <script src="js/jquery-3.6.1.min.js"></script>
-
-    <script>
-        $('#action').click(function(){
-            $('#buttons').toggleClass('action');
-        })
-
-        function remove_class(){
-            $('body').removeClass('red blue purple green pink');
-        }
-
-        $('#red').click(function(){
-            remove_class();
-            $('body').addClass('red');
-        })
-
-        $('#blue').click(function(){
-            remove_class();
-            $('body').addClass('blue'); 
-        })
-       
-        $('#purple').click(function(){
-            remove_class();
-            $('body').addClass('purple'); 
-        }) 
-            
-
-        $('#green').click(function(){
-            remove_class();
-            $('body').addClass('green'); 
-        })
-
-        $('#pink').click(function(){
-            remove_class();
-            $('body').addClass('pink'); 
-        })
 
 
 
 
-    </script>
+    <!-- js section -->
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+    <!-- slick -->
+    <script src="assets/vendor/slick/slick.min.js"></script>
+
+
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
 
 
 
 
 </body>
+
 </html>
